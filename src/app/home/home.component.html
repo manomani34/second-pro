@@ -1,0 +1,15 @@
+<div class="row">
+<div class="col-lg-12">    
+<app-about [title]="message"></app-about>
+<app-star *ngFor="let r of ratings" [starRating]="r" (starClick)="onClick($event)">
+    <p>Extra contents</p>
+</app-star>
+<input type="text" #nameInputField>
+<h1>{{ name }}</h1>
+<!--<button (click)="buttonClick(nameInputField)" class="btn btn-danger">Apply Name</button>-->
+<button (click)="buttonClick()" class="btn btn-danger">Apply Name</button>
+<P>This paragraph is from home</P>
+<h2 *ngIf="eventOutPut != null">{{ eventOutPut.name + " " + eventOutPut.age + " " +  eventOutPut.school}}</h2>
+</div>
+</div>
+

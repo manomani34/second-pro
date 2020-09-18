@@ -1,0 +1,16 @@
+
+
+<div class="crop"
+[style.width.px]="starwidth" 
+[title]="rating">
+<ng-content></ng-content>
+    <div style="width: 86px;" (click)="onStarClicked()">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>       
+    </div>
+</div>
+
+<p>This paragraph is from star!</p>

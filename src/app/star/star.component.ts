@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, Input, EventEmitter, Output, ViewEncapsulation } from '@angular/core';
 import { IPerson } from '../person';
-
+//test
 @Component({
   selector: 'app-star',
   templateUrl: './star.component.html',
